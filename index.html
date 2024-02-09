@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/be64ac2687.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</head>
+
+<body id="body">
+  <header id="header1">
+    <div class="left-menu">
+      <h3>Thanh Lam</h3>
+    </div>
+    <div class="right-menu">
+      <p onclick="scrollToSection('home')">HOME</p>
+      <p onclick="scrollToSection('about-me')">ABOUT</p>
+      <p onclick="scrollToSection('features')">PORTFOLIO</p>
+      <p onclick="scrollToSection('resume')">RESUME</p>
+      <p onclick="scrollToSection('tetinal')">TESTIMONIDAL</p>
+      <p onclick="scrollToSection('contact')">CONTACT</p>
+    </div>
+    <div id="menu">
+      <button class="menu-btn-list" onclick="openModal()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+  <div id="modal"></div>
+  <div id="menu-list-nav">
+    <p onclick="closeModal('home')">HOME</p>
+    <p onclick="closeModal('about-me')">ABOUT</p>
+    <p onclick="closeModal('features')">FEATURES</p>
+    <p onclick="closeModal('resume')">RESUME</p>
+    <p onclick="closeModal('tetinal')">TESTIMONIDAL</p>
+    <p onclick="closeModal('contact')">CONTACT</p>
+  </div>
+  <main>
+    <div id="home">
+      <div class="home-infor">
+        <p class="welcome">welcome to my world</p>
+        <div class="welcome-infor">
+          <div class="welcome-name">
+            <h2>Hi, I'm</h2>
+            <h2 style="color: #62BCF6">Thanh Lam</h2>
+          </div>
+          <div class="welcome-career">
+            <h3 style="color: #62BCF6">a</h3>
+            <h3>Developer</h3>
+          </div>
+        </div>
+        <p class="home-infor-introduce">
+          "Cách để bắt đầu đó là ngừng nói suông và bắt tay vào công việc" – Walt Disney
+        </p>
+        <div class="home-contact">
+          <div class="home-contact-item">
+            <p>Find with me</p>
+            <div class="box-contact-item">
+              <div class="box-contact-item-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="box-contact-item-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="box-contact-item-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-home-img">
+        <img class="home-img" src="avatar1.png" />
+      </div>
+    </div>
+    <div id="about-me">
+      <div class="box-home-img about-img">
+        <img class="home-img" src="about1.png" />
+      </div>
+      <div class="table-container">
+        <div class="about-me-intro">
+          <p class="features-title">ABOUT</p>
+          <h2>About me</h2>
+
+        </div>
+        <div class="about-me-box">
+          <div class="about-me-item">
+            <h3>Name:</h3>
+            <p>Võ Thị Thanh Lam</p>
+          </div>
+          <div class="about-me-item">
+            <h3>Date of birth:</h3>
+            <p>22/09/2024</p>
+          </div>
+
+          <div class="about-me-item">
+            <h3>Email:</h3>
+            <p>thanhlam01012K4@gmail.com</p>
+          </div>
+          <div class="about-me-item">
+            <h3>Phone:</h3>
+            <p>0345415591</p>
+          </div>
+          <div class="about-me-item">
+            <h3>Hobies:</h3>
+            <p>
+            <ul>
+              <li>Tìm tòi và học hỏi những cái mới</li>
+              <li>Đọc sách, nghe nhạc, xem phim</li>
+              <li>Chơi bóng chuyền</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="features">
+      <h3 class="features-header">What I Do</h3>
+      <div class="features-container">
+        <div class="features-box">
+          <div class="features-box-item">
+            <img src="slide1.png" />
+            <div class="features-box-content">
+              <h3>Web cá nhân</h3>
+              <button><a href="https://thanhlam2209.github.io/thietkeweb/">Truy cập</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="features-box">
+          <div class="features-box-item">
+            <img src="slide2.png" />
+            <div class="features-box-content">
+              <h3>Material Design</h3>
+              <button><a href="https://thanhlam2k4.000webhostapp.com/BT%20Bu%E1%BB%95i%203/Bai1.html">Truy cập</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="features-box">
+          <div class="features-box-item">
+            <img src="slide3.png" />
+            <div class="features-box-content">
+              <h3>Aura</h3>
+              <button><a href="">Truy cập</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="features-box" style="display: none;">
+          <div class="features-box-item">
+            <img src="slide5.png" />
+            <div class="features-box-content">
+              <h3>Travel</h3>
+              <button><a href="https://thanhlam2k4.000webhostapp.com/BT%20bu%E1%BB%95i%207/bai8.html">Truy cập</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="features-box" style="display: none;">
+          <div class="features-box-item">
+            <img src="slide4.png" />
+            <div class="features-box-content">
+              <h3>Acency-Kalium</h3>
+              <button><a href="https://thanhlam2k4.000webhostapp.com/BT%20bu%E1%BB%95i%204/Bai4.html">Truy cập</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="features-control">
+          <i class="fa-solid fa-chevron-left" onclick="controlFeaturesPre()"></i>
+          <i class="fa-solid fa-angle-right" onclick="controlFeaturesNext()"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="resume">
+      <h3 class="resume-title">My Resume</h3>
+
+      <div class="tab">
+        <div class="tab-education" onclick="changeTab('tab-education')">
+          <p>Education</p>
+        </div>
+        <div class="tab-skill" onclick="changeTab('tab-skill')">
+          <p>Professional Skills</p>
+        </div>
+      </div>
+      <menu>
+        <div id="tab-education" class="education-container chose-tab">
+          <div class="education">
+            <div class="education-box">
+              <h4>University</h4>
+              <p class="education-detail">
+              <ul>
+                <li>Tên trường: Trường Đại học Thủ đô Hà Nội</li>
+                <li>Chuyên ngành: Công nghệ thông tin</li>
+                <li>Trình độ: Sinh viên năm 2</li>
+                <li>Thời gian học: 2022 - 2024 (hoặc dự kiến tốt nghiệp)</li>
+              </ul>
+              </p>
+            </div>
+            <div class="education-box">
+              <h4>Skills</h4>
+              <p class="education-detail">
+              <ul>
+                <li>Khả năng viết code C/HTML/CSS cơ bản và nâng cao.</li>
+                <li>Có hiểu biết và khả năng viết code JavaScript cơ bản</li>
+                <li>Hiểu rõ các cấu trúc HTML và CSS</li>
+                <li>Có khả năng sử dụng các layout phổ biến như float, flexbox, grid</li>
+                <li>Có khả năng sử dụng các thư viện CSS phổ biến như Bootstrap.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="education-box">
+              <h4>Experiences</h4>
+              <p class="education-detail">
+              <ul>
+                <li>Năm 1 tham gia cuộc thi Olympic Lập trình</li>
+                <li>Tham gia các học động ngoại khóa: Ngày hội Festival</li>
+                <li>Tạo ra dự án cá nhân</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-skill" class="skill-container chose-tab">
+          <div class="skill">
+            <h3 class="design-skill-title">Design Skill</h3>
+            <div class="design-skill-box">
+              <div class="skill-box-item">
+                <p>PHOTOSHOP</p>
+                <div class="skill-item">
+                  <div style="width: 80%"></div>
+                  <p style="left: 80%;">80%</p>
+                </div>
+              </div>
+              <div class="skill-box-item">
+                <p>ADOBE ILLUSTRATOR</p>
+                <div class="skill-item">
+                  <div style="width: 50%"></div>
+                  <p style="left: 50%;">50%</p>
+                </div>
+              </div>
+              <div class="skill-box-item">
+                <p>FIGMA</p>
+                <div class="skill-item">
+                  <div style="width: 60%"></div>
+                  <p style="left: 60%;">60%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3 class="design-skill-title">Development Skill</h3>
+            <div class="design-skill-box">
+              <div class="skill-box-item">
+                <p>HTML</p>
+                <div class="skill-item">
+                  <div style="width: 80%"></div>
+                  <p style="left: 80%;">80%</p>
+                </div>
+              </div>
+              <div class="skill-box-item">
+                <p>CSS</p>
+                <div class="skill-item">
+                  <div style="width: 80%"></div>
+                  <p style="left: 80%;">80%</p>
+                </div>
+              </div>
+              <div class="skill-box-item">
+                <p>JAVASCRIPT</p>
+                <div class="skill-item">
+                  <div style="width: 50%"></div>
+                  <p style="left: 50%;">50%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </menu>
+    </div>
+
+    <div id="tetinal">
+      <div class="contact-box-title">
+        <h3 class="tetinal-header">Testinal With Me</h3>
+      </div>
+      <div class="tetinal-container slider-container">
+          <div class="tetinal-box slide" id="show-slide-1">
+            <div class="tetinal-box-img">
+              <img src="tetinal1.png" />
+            </div>
+            <div class="tetinal-box-content">
+              <div class="tetinal-box-content-icon">
+                <h1>"</h1>
+                <h1>"</h1>
+              </div>
+              <h3>Trần Thi Thu Phương</h3>
+              <p>Tôi đã từng là giáo viên của Thanh Lam trong môn học “Đồ học ứng dụng” và “Thiết kế Web” và tôi thấy
+                Thanh Lam là một sinh viên chăm chỉ và sáng tạo,luôn có tinh thần học hỏi và cầu tiến .Thanh Lam có khả
+                năng thiết kế độc đáo, mới mẻ, luôn hoàn thành xuất sắc các bài tập, dự án với chất lượng cao.</p>
+            </div>
+          </div>
+          <div class="tetinal-box slide" id="show-slide-2" style="background-color: #C8E2F3;">
+            <div class="tetinal-box-img">
+              <img src="tetinal2.png" />
+            </div>
+            <div class="tetinal-box-content">
+              <div class="tetinal-box-content-icon">
+                <h1>"</h1>
+                <h1>"</h1>
+              </div>
+              <h3>Đinh Thị Quỳnh</h3>
+              <p>Tôi đã có cơ hội làm việc cùng Thanh Lam trong một vài dự án. Thanh Lam không chỉ có kiến thức sâu rộng
+                về lập trình mà còn thể hiện sự sáng tạo và khả năng làm việc nhóm xuất sắc. Đối với mọi thách thức,
+                Thanh
+                Lam luôn tìm ra giải pháp linh hoạt và hiệu quả. Một đồng nghiệp xuất sắc và đáng tin cậy!</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="contact-box-title">
+        <h3 class="contact-header">Contact With Me</h3>
+      </div>
+      <div class="contact-container">
+        <div class="contact-my-infor">
+          <div class="contact-box-img">
+            <img src="contact1.png" />
+          </div>
+          <div class="contact-box-name">
+            <h3>Thanh Lam</h3>
+            <p>Student</p>
+          </div>
+          <p class="contact-box-detail">
+            I am available for freelance work. Connect with me via and call in
+            to my account.
+          </p>
+          <div class="contact-box-address">
+            <p>Phone: 0345415591</p>
+            <p>Email: thanhlam01012K4@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-your-infor">
+          <div class="contact-box-infor-name">
+            <div class="contact-your-item">
+              <p>YOUR NAME</p>
+              <input />
+            </div>
+            <div class="contact-your-item">
+              <p>PHONE NUMBER</p>
+              <input type="number" />
+            </div>
+          </div>
+          <div class="contact-your-item">
+            <p>EMAIL</p>
+            <input />
+          </div>
+          <div class="contact-your-item">
+            <p>SUBJECT</p>
+            <input />
+          </div>
+          <div class="contact-your-item">
+            <p>YOUR MESSAGE</p>
+            <textarea></textarea>
+          </div>
+          <button class="btn-contact">SEND MESSAGE</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
